@@ -35,6 +35,7 @@ jobs:
             . venv/bin/activate
             make lint
             
-workflow:
- docker-ci:
-  - build
+workflows:
+    docker-ci:
+        jobs:
+            - build
